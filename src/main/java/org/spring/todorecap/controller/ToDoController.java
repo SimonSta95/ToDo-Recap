@@ -34,7 +34,7 @@ public class ToDoController {
 
     @PutMapping("/{id}")
     public ToDo updateToDo(@PathVariable String id, @RequestBody ToDo todo){
-        return todoService.updateStatus(id, todo);
+        return todoService.updateToDo(id, todo);
     }
 
     @DeleteMapping("/{id}")

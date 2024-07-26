@@ -30,7 +30,7 @@ public class ToDoService {
         return todorepo.save(todo);
     }
 
-    public ToDo updateStatus(String id, ToDo toDo) {
+    public ToDo updateToDo(String id, ToDo toDo) {
         todorepo.save(toDo);
 
         return todorepo.findById(id).orElseThrow();
